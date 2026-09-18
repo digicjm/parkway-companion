@@ -432,6 +432,7 @@
 			"groups": [
 				{
 					"id": "quickStartMenu",
+					"closeModalOnSelect": true,
 					"row": 0,
 					"col": 0
 				}
@@ -443,7 +444,7 @@
 				{
 					"id": "videoRoutingSources",
 					"tag": "boothMon",
-					"selection": "$(expression:videoRoutingBoothMonSourceId)",
+					"selection": "$(expression:videoRouting).boothMon.source.id",
 					"closeModalOnSelect": true,
 					"row": 2,
 					"col": 5

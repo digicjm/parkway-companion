@@ -37,13 +37,10 @@ for (let l=length(layers)-1; l>=0; l--) {
                         btn.groupTag = g.tag
                     }
                     if ((g.selection ?? "") != ""){
-                        btn.groupSelection = parseVariables(g.selection)
+                        btn.groupSelection = g.selection
                     }
                     if ((g.closeModalOnSelect ?? "") != ""){
                         btn.closeModalOnSelect = parseVariables(g.closeModalOnSelect)
-                    }
-                    if (btn.selected ?? "" != ""){
-                        btn.selected = bool(parseVariables(btn.selected) ?? false)
                     }
                     btn.dimmed = l!=0
                     buttons[targetRow][targetCol] = btn
