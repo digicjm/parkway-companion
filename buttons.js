@@ -8,7 +8,7 @@ for (let l=length(layers)-1; l>=0; l--) {
     let layer = layers[l]
     let page = config.pages[layer]
 
-    let groups = arrayMap(page.groups, g => {
+    let groups = arrayMap(page.groups ?? [], g => {
         g.group = config.buttonGroups[g.id]
         return g
     })
