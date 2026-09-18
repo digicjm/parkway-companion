@@ -251,9 +251,9 @@
 			"id": "reinforcementMute",
 			"label": "Mute John's Voice",
 			"icon": "commercial",
-			"selected": "$(expression:streamMicMuted)",
+			"selected": "$(expression:reinforcementMuted)",
 			"onPress": {
-				"var": "muteStreamMic",
+				"var": "muteReinforcement",
 				"toggle": true
 			}
 		},
