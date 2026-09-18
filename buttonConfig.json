@@ -262,7 +262,7 @@
 		},
 		"videoRoutingBoothMon": {
 			"id": "videoRoutingBoothMon",
-			"label": "Booth Mon: ${$(expression:videoRouting.boothMon.source.label)}",
+			"label": "Booth Mon: ${$(expression:videoRouting).boothMon.source.label}",
 			"icon": "imac-settings",
 			"onTap": {
 				"var": "showModal",
