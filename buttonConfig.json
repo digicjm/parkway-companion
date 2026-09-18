@@ -231,7 +231,8 @@
 			"id": "streamMicMute",
 			"label": "Mute Stream",
 			"icon": "no-microphone",
-			"selected": "$(expression:streamMicMuted)",
+			"selected": "$(custom:muteStreamMic).value",
+			"highlight": "red",
 			"onPress": {
 				"var": "muteStreamMic",
 				"toggle": true
@@ -242,6 +243,7 @@
 			"label": "Mute Callers",
 			"icon": "no-audio",
 			"selected": "$(custom:muteFarEnd).value",
+			"highlight": "red",
 			"onPress": {
 				"var": "muteFarEnd",
 				"toggle": true
@@ -251,7 +253,8 @@
 			"id": "reinforcementMute",
 			"label": "Mute John's Voice",
 			"icon": "commercial",
-			"selected": "$(expression:reinforcementMuted)",
+			"selected": "$(custom:muteReinforcement).value",
+			"highlight": "red",
 			"onPress": {
 				"var": "muteReinforcement",
 				"toggle": true
@@ -259,7 +262,7 @@
 		},
 		"videoRoutingBoothMon": {
 			"id": "videoRoutingBoothMon",
-			"label": "Booth Mon: $(expression:videoRoutingBoothMonSourceLabel)",
+			"label": "Booth Mon: ${$(expression:videoRouting.boothMon.source.label)}",
 			"icon": "imac-settings",
 			"onTap": {
 				"var": "showModal",
