@@ -241,7 +241,7 @@
 			"id": "farEndMute",
 			"label": "Mute Callers",
 			"icon": "no-audio",
-			"selected": "$(expression:farEndMuted)",
+			"selected": "$(custom:muteFarEnd).value",
 			"onPress": {
 				"var": "muteFarEnd",
 				"toggle": true
