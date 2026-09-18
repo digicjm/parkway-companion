@@ -251,7 +251,7 @@
 		},
 		"reinforcementMute": {
 			"id": "reinforcementMute",
-			"label": "Mute John's Voice",
+			"label": "Mute John",
 			"icon": "commercial",
 			"selected": "$(custom:muteReinforcement).value",
 			"highlight": "red",
