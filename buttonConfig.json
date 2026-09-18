@@ -249,7 +249,7 @@
 		},
 		"reinforcementMute": {
 			"id": "reinforcementMute",
-			"label": "Mute Reinforce",
+			"label": "Mute John's Voice",
 			"icon": "commercial",
 			"selected": "$(expression:streamMicMuted)",
 			"onPress": {
@@ -342,7 +342,9 @@
 			"background": "orange",
 			"buttons": [
 				[
-					"streamMicMute"
+					"streamMicMute",
+					"farEndMute",
+					"reinforcementMute"
 				]
 			]
 		},
