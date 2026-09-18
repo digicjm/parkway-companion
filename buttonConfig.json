@@ -1,0 +1,449 @@
+{
+	"buttons": {
+		"cancelModal": {
+			"id": "cancelModal",
+			"label": "CANCEL",
+			"icon": "delete-sign",
+			"onPress": {
+				"var": "closeModal"
+			}
+		},
+		"power": {
+			"id": "power",
+			"label": "Quick Start",
+			"icon": "shutdown",
+			"onPress": {
+				"var": "showModal",
+				"value": "quickStartMenu"
+			}
+		},
+		"startSunClass": {
+			"id": "startSunClass",
+			"label": "Sunday Class",
+			"icon": "classroom",
+			"onPress": {
+				"var": "quickStart",
+				"value": "sunClass"
+			}
+		},
+		"startSunService": {
+			"id": "startSunService",
+			"label": "Sunday Service",
+			"icon": "cross",
+			"onPress": {
+				"var": "quickStart",
+				"value": "sunService"
+			}
+		},
+		"startWedClass": {
+			"id": "startWedClass",
+			"label": "Wed Night Class",
+			"icon": "holy-bible",
+			"onPress": {
+				"var": "quickStart",
+				"value": "wedClass"
+			}
+		},
+		"presetCross": {
+			"id": "presetCross",
+			"label": "Cross",
+			"icon": "cross",
+			"onPress": {
+				"var": "recallPreset",
+				"value": "cross"
+			}
+		},
+		"presetClass": {
+			"id": "presetClass",
+			"label": "Class",
+			"icon": "classroom",
+			"onPress": {
+				"var": "recallPreset",
+				"value": "class"
+			}
+		},
+		"presetTimer": {
+			"id": "presetTimer",
+			"label": "Timer",
+			"icon": "digital-clock",
+			"onPress": {
+				"var": "recallPreset",
+				"value": "timer"
+			}
+		},
+		"presetPodium": {
+			"id": "presetPodium",
+			"label": "Podium",
+			"icon": "podium-with-speaker",
+			"onPress": {
+				"var": "recallPreset",
+				"value": "podium"
+			}
+		},
+		"presetSinging": {
+			"id": "presetSinging",
+			"label": "Singing",
+			"icon": "music-transcript",
+			"onPress": {
+				"var": "recallPreset",
+				"value": "singing"
+			}
+		},
+		"presetCommunion": {
+			"id": "presetCommunion",
+			"label": "Communion",
+			"icon": "grapes",
+			"onPress": {
+				"var": "recallPreset",
+				"value": "communion"
+			}
+		},
+		"presetChildren": {
+			"id": "presetChildren",
+			"label": "Children",
+			"icon": "children",
+			"onPress": {
+				"var": "recallPreset",
+				"value": "children"
+			}
+		},
+		"presetSermon": {
+			"id": "presetSermon",
+			"label": "Sermon",
+			"icon": "headset",
+			"onPress": {
+				"var": "recallPreset",
+				"value": "sermon"
+			}
+		},
+		"fbLive": {
+			"id": "fbLive",
+			"customStyle": "0/0",
+			"onPress": {
+				"var": "startStream"
+			}
+		},
+		"cameraUp": {
+			"id": "cameraUp",
+			"label": "UP",
+			"icon": "chevron-up",
+			"onPress": {
+				"var": "setPtz.up",
+				"value": true
+			},
+			"onRelease": {
+				"var": "setPtz.up",
+				"value": false
+			}
+		},
+		"cameraDown": {
+			"id": "cameraDown",
+			"label": "DOWN",
+			"icon": "chevron-down",
+			"onPress": {
+				"var": "setPtz.down",
+				"value": true
+			},
+			"onRelease": {
+				"var": "setPtz.down",
+				"value": false
+			}
+		},
+		"cameraLeft": {
+			"id": "cameraLeft",
+			"label": "LEFT",
+			"icon": "chevron-left",
+			"onPress": {
+				"var": "setPtz.left",
+				"value": true
+			},
+			"onRelease": {
+				"var": "setPtz.left",
+				"value": false
+			}
+		},
+		"cameraRight": {
+			"id": "cameraRight",
+			"label": "RIGHT",
+			"icon": "chevron-right",
+			"onPress": {
+				"var": "setPtz.right",
+				"value": true
+			},
+			"onRelease": {
+				"var": "setPtz.right",
+				"value": false
+			}
+		},
+		"cameraZoomIn": {
+			"id": "cameraZoomIn",
+			"label": "ZOOM IN",
+			"icon": "zoom-in",
+			"onPress": {
+				"var": "setPtz.in",
+				"value": true
+			},
+			"onRelease": {
+				"var": "setPtz.in",
+				"value": false
+			}
+		},
+		"cameraZoomOut": {
+			"id": "cameraZoomOut",
+			"label": "ZOOM OUT",
+			"icon": "zoom-out",
+			"onPress": {
+				"var": "setPtz.out",
+				"value": true
+			},
+			"onRelease": {
+				"var": "setPtz.out",
+				"value": false
+			}
+		},
+		"cameraHome": {
+			"id": "cameraHome",
+			"label": "RESET",
+			"icon": "center-direction",
+			"onPress": {
+				"var": "resetPtz"
+			}
+		},
+		"cameraToggle": {
+			"id": "cameraToggle",
+			"label": "Toggle Cam",
+			"icon": "video-call",
+			"onPress": {
+				"var": "setPtz.altCam",
+				"toggle": true
+			}
+		},
+		"cameraPresets": {
+			"id": "cameraPresets",
+			"label": "Presets",
+			"icon": "bulleted-list",
+			"onPress": {
+				"var": "showModal",
+				"value": "cameraPresets"
+			}
+		},
+		"streamMicMute": {
+			"id": "streamMicMute",
+			"label": "Mute Stream",
+			"icon": "no-microphone",
+			"selected": "$(expression:streamMicMuted)",
+			"onPress": {
+				"var": "muteStreamMic",
+				"toggle": true
+			}
+		},
+		"farEndMute": {
+			"id": "farEndMute",
+			"label": "Mute Callers",
+			"icon": "no-audio",
+			"selected": "$(expression:farEndMuted)",
+			"onPress": {
+				"var": "muteFarEnd",
+				"toggle": true
+			}
+		},
+		"reinforcementMute": {
+			"id": "reinforcementMute",
+			"label": "Mute Reinforce",
+			"icon": "commercial",
+			"selected": "$(expression:streamMicMuted)",
+			"onPress": {
+				"var": "muteStreamMic",
+				"toggle": true
+			}
+		},
+		"videoRoutingBoothMon": {
+			"id": "videoRoutingBoothMon",
+			"label": "Booth Mon: $(expression:videoRoutingBoothMonSourceLabel)",
+			"icon": "imac-settings",
+			"onTap": {
+				"var": "showModal",
+				"value": "boothMonQuickSelect"
+			},
+			"onHold": {
+				"var": "goToPage",
+				"value": "videoRouting"
+			}
+		},
+		"videoSourceSelectPCSlides": {
+			"id": "videoSourceSelectPCSlides",
+			"label": "PC/Slides",
+			"icon": "workstation",
+			"select": "pc",
+			"onPress": {
+				"var": "selectVideoRoutingSource",
+				"value": {
+					"display": "$(local:groupTag)",
+					"source": "pc"
+				}
+			}
+		}
+	},
+	"buttonGroups": {
+		"system": {
+			"id": "system",
+			"background": "red",
+			"buttons": [
+				[
+					"power"
+				]
+			]
+		},
+		"quickStartMenu": {
+			"id": "quickStartMenu",
+			"background": "red",
+			"buttons": [
+				[
+					"cancelModal"
+				],
+				[
+					"startSunClass"
+				],
+				[
+					"startSunService"
+				],
+				[
+					"startWedClass"
+				]
+			]
+		},
+		"presets": {
+			"id": "presets",
+			"background": "teal",
+			"buttons": [
+				[
+					"presetCross",
+					"presetClass",
+					"presetTimer",
+					"presetPodium",
+					"presetSinging",
+					"presetCommunion",
+					"presetChildren",
+					"presetSermon"
+				]
+			]
+		},
+		"stream": {
+			"id": "stream",
+			"background": "green",
+			"buttons": [
+				[
+					"fbLive"
+				]
+			]
+		},
+		"audio": {
+			"id": "audio",
+			"background": "orange",
+			"buttons": [
+				[
+					"streamMicMute"
+				]
+			]
+		},
+		"camera": {
+			"id": "camera",
+			"background": "blue",
+			"buttons": [
+				[
+					"cameraToggle",
+					"cameraUp",
+					"cameraZoomIn"
+				],
+				[
+					"cameraLeft",
+					"cameraHome",
+					"cameraRight"
+				],
+				[
+					"cameraPresets",
+					"cameraDown",
+					"cameraZoomOut"
+				]
+			]
+		},
+		"videoRouting": {
+			"id": "videoRouting",
+			"background": "purple",
+			"buttons": [
+				[
+					"videoRoutingBoothMon"
+				]
+			]
+		},
+		"videoRoutingSources": {
+			"id": "videoRoutingSources",
+			"background": "purple",
+			"buttons": [
+				[
+					"videoSourceSelectPCSlides"
+				]
+			]
+		}
+	},
+	"pages": {
+		"main": {
+			"id": "main",
+			"groups": [
+				{
+					"id": "system",
+					"row": 0,
+					"col": 0
+				},
+				{
+					"id": "presets",
+					"row": 0,
+					"col": 1
+				},
+				{
+					"id": "stream",
+					"row": 1,
+					"col": 0
+				},
+				{
+					"id": "videoRouting",
+					"row": 1,
+					"col": 4
+				},
+				{
+					"id": "camera",
+					"row": 1,
+					"col": 6
+				},
+				{
+					"id": "audio",
+					"row": 3,
+					"col": 0
+				}
+			]
+		},
+		"quickStartMenu": {
+			"id": "quickStartMenu",
+			"groups": [
+				{
+					"id": "quickStartMenu",
+					"row": 0,
+					"col": 0
+				}
+			]
+		},
+		"boothMonQuickSelect": {
+			"id": "boothMonQuickSelect",
+			"groups": [
+				{
+					"id": "videoRoutingSources",
+					"tag": "boothMon",
+					"selection": "$(expression:videoRoutingBoothMonSourceId)",
+					"closeModalOnSelect": true,
+					"row": 2,
+					"col": 5
+				}
+			]
+		}
+	}
+}
