@@ -310,6 +310,45 @@
 					"source": "pc"
 				}
 			}
+		},
+		"videoSourceSelectProgram": {
+			"id": "videoSourceSelectProgram",
+			"label": "Broadcast",
+			"icon": "gps-receiving",
+			"select": "program",
+			"onPress": {
+				"var": "selectVideoRoutingSource",
+				"value": {
+					"display": "$(local:groupTag)",
+					"source": "program"
+				}
+			}
+		},
+		"videoSourceSelectWebEx": {
+			"id": "videoSourceSelectWebEx",
+			"label": "WebEx Call",
+			"icon": "webcam-man",
+			"select": "webex",
+			"onPress": {
+				"var": "selectVideoRoutingSource",
+				"value": {
+					"display": "$(local:groupTag)",
+					"source": "webex"
+				}
+			}
+		},
+		"videoSourceSelectMessage": {
+			"id": "videoSourceSelectMessage",
+			"label": "Message",
+			"icon": "speech-bubble-with-dots",
+			"select": "message",
+			"onPress": {
+				"var": "selectVideoRoutingSource",
+				"value": {
+					"display": "$(local:groupTag)",
+					"source": "message"
+				}
+			}
 		}
 	},
 	"buttonGroups": {
@@ -414,7 +453,10 @@
 			"background": "purple",
 			"buttons": [
 				[
-					"videoSourceSelectPCSlides"
+					"videoSourceSelectProgram",
+					"videoSourceSelectPCSlides",
+					"videoSourceSelectWebEx",
+					"videoSourceSelectMessage"
 				]
 			]
 		},
@@ -484,7 +526,7 @@
 					"selection": "$(expression:videoRouting).boothMon.source.id",
 					"closeModalOnSelect": true,
 					"row": 2,
-					"col": 5
+					"col": 4
 				}
 			]
 		},
