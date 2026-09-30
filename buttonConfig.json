@@ -251,13 +251,38 @@
 		},
 		"reinforcementMute": {
 			"id": "reinforcementMute",
-			"label": "Mute John",
+			"label": "Mute LoudSpkr",
 			"icon": "commercial",
 			"selected": "$(custom:muteReinforcement).value",
 			"highlight": "red",
 			"onPress": {
 				"var": "muteReinforcement",
 				"toggle": true
+			}
+		},
+		"turnOffAllAudio": {
+			"id": "turnOffAllAudio",
+			"label": "Turn Off All Audio",
+			"icon": "block-microphone",
+			"onPress": {
+				"var": "turnOffAllAudio"
+			}
+		},
+		"resetAudioLevels": {
+			"id": "resetAudioLevels",
+			"label": "Reset Levels",
+			"icon": "vertical-settings-mixer",
+			"onPress": {
+				"var": "resetAudioLevels"
+			}
+		},
+		"headphoneSource": {
+			"id": "headphoneSource",
+			"label": "Headphone Source",
+			"icon": "headphones",
+			"onPress": {
+				"var": "showModal",
+				"value": "headphoneSourceSelect"
 			}
 		},
 		"videoRoutingBoothMon": {
@@ -347,7 +372,10 @@
 				[
 					"streamMicMute",
 					"farEndMute",
-					"reinforcementMute"
+					"reinforcementMute",
+					"turnOffAllAudio",
+					"resetAudioLevels",
+					"headphoneSource"
 				]
 			]
 		},
@@ -387,6 +415,15 @@
 			"buttons": [
 				[
 					"videoSourceSelectPCSlides"
+				]
+			]
+		},
+		"headphoneSources": {
+			"id": "headphoneSources",
+			"background": "orange",
+			"buttons": [
+				[
+					"cancelModal"
 				]
 			]
 		}
@@ -447,6 +484,17 @@
 					"selection": "$(expression:videoRouting).boothMon.source.id",
 					"closeModalOnSelect": true,
 					"row": 2,
+					"col": 5
+				}
+			]
+		},
+		"headphoneSourceSelect": {
+			"id": "headphoneSourceSelect",
+			"groups": [
+				{
+					"id": "headphoneSources",
+					"closeModalOnSelect": true,
+					"row": 3,
 					"col": 5
 				}
 			]
