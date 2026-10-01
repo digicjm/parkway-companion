@@ -1,0 +1,46 @@
+{
+    "sources": {
+        "program": {
+            "id": "program",
+            "label": "Broadcast",
+            "inputNum": 1
+        },
+        "pc": {
+            "id": "pc",
+            "label": "Slides",
+            "inputNum": 2
+        },
+        "webex": {
+            "id": "webex",
+            "label": "WebEx",
+            "inputNum": 3
+        },
+        "message": {
+            "id": "message",
+            "label": "Message",
+            "inputNum": 4
+        }
+    },
+    "displays": {
+        "boothMon": {
+            "id": "boothMon",
+            "label": "Booth Monitor",
+            "outputNum": 1
+        },
+        "churchFront": {
+            "id": "churchFront",
+            "label": "Audience TVs",
+            "outputNum": 2
+        },
+        "churchRear": {
+            "id": "churchRear",
+            "label": "Rear TV",
+            "outputNum": 3
+        },
+        "nursery": {
+            "id": "nursery",
+            "label": "Nursery TV",
+            "outputNum": 4
+        }
+    }
+}
