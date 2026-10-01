@@ -454,7 +454,9 @@
 			"buttons": [
 				[
 					"videoSourceSelectProgram",
-					"videoSourceSelectPCSlides",
+					"videoSourceSelectPCSlides"
+				],
+				[
 					"videoSourceSelectWebEx",
 					"videoSourceSelectMessage"
 				]
@@ -525,7 +527,7 @@
 					"tag": "boothMon",
 					"selection": "$(expression:videoRouting).boothMon.source.id",
 					"closeModalOnSelect": true,
-					"row": 2,
+					"row": 1,
 					"col": 4
 				}
 			]
