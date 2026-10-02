@@ -527,7 +527,7 @@
 		},
 		"camera": {
 			"id": "camera",
-			"background": "pink",
+			"background": "purple",
 			"buttons": [
 				[
 					"cameraToggle",
@@ -548,7 +548,7 @@
 		},
 		"videoRouting": {
 			"id": "videoRouting",
-			"background": "purple",
+			"background": "pink",
 			"buttons": [
 				[
 					"videoRoutingChurchFront",
@@ -562,7 +562,7 @@
 		},
 		"videoRoutingSources": {
 			"id": "videoRoutingSources",
-			"background": "purple",
+			"background": "pink",
 			"buttons": [
 				[
 					"videoSourceSelectProgram",
