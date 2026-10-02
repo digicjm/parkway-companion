@@ -445,7 +445,7 @@
 		},
 		"audio": {
 			"id": "audio",
-			"background": "orange",
+			"background": "blue",
 			"buttons": [
 				[
 					"streamMicMute",
@@ -459,7 +459,7 @@
 		},
 		"camera": {
 			"id": "camera",
-			"background": "blue",
+			"background": "orange",
 			"buttons": [
 				[
 					"cameraToggle",
@@ -508,7 +508,7 @@
 		},
 		"headphoneSources": {
 			"id": "headphoneSources",
-			"background": "orange",
+			"background": "blue",
 			"buttons": [
 				[
 					"cancelModal"
