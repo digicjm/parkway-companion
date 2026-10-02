@@ -498,7 +498,16 @@
 			"background": "green",
 			"buttons": [
 				[
-					"fbLive"
+					"fbLive",
+					"webExCallToggle",
+					"recordToggle",
+					"programSourceSelect"
+				],
+				[
+					"muteVideo",
+					"showMessage",
+					"hideLogo",
+					"pip"
 				]
 			]
 		},
