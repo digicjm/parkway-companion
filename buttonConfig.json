@@ -495,7 +495,7 @@
 		},
 		"stream": {
 			"id": "stream",
-			"background": "green",
+			"background": "blue",
 			"buttons": [
 				[
 					"fbLive",
@@ -513,7 +513,7 @@
 		},
 		"audio": {
 			"id": "audio",
-			"background": "blue",
+			"background": "green",
 			"buttons": [
 				[
 					"streamMicMute",
