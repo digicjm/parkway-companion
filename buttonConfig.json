@@ -298,6 +298,45 @@
 				"value": "videoRouting"
 			}
 		},
+		"videoRoutingChurchFront": {
+			"id": "videoRoutingChurchFront",
+			"label": "Front TVs: ${$(expression:videoRouting).churchFront.source.label}",
+			"icon": "imac-settings",
+			"onTap": {
+				"var": "showModal",
+				"value": "churchFrontQuickSelect"
+			},
+			"onHold": {
+				"var": "goToPage",
+				"value": "videoRouting"
+			}
+		},
+		"videoRoutingChurchRear": {
+			"id": "videoRoutingChurchRear",
+			"label": "Rear TV: ${$(expression:videoRouting).churchRear.source.label}",
+			"icon": "imac-settings",
+			"onTap": {
+				"var": "showModal",
+				"value": "churchRearQuickSelect"
+			},
+			"onHold": {
+				"var": "goToPage",
+				"value": "videoRouting"
+			}
+		},
+		"videoRoutingNursery": {
+			"id": "videoRoutingNursery",
+			"label": "Nursery TV: ${$(expression:videoRouting).nursery.source.label}",
+			"icon": "imac-settings",
+			"onTap": {
+				"var": "showModal",
+				"value": "nurseryQuickSelect"
+			},
+			"onHold": {
+				"var": "goToPage",
+				"value": "videoRouting"
+			}
+		},
 		"videoSourceSelectPCSlides": {
 			"id": "videoSourceSelectPCSlides",
 			"label": "PC/Slides",
@@ -444,7 +483,12 @@
 			"background": "purple",
 			"buttons": [
 				[
+					"videoRoutingChurchFront",
 					"videoRoutingBoothMon"
+				],
+				[
+					"videoRoutingChurchRear",
+					"videoRoutingNursery"
 				]
 			]
 		},
@@ -526,6 +570,45 @@
 					"id": "videoRoutingSources",
 					"tag": "boothMon",
 					"selection": "$(expression:videoRouting).boothMon.source.id",
+					"closeModalOnSelect": true,
+					"row": 1,
+					"col": 4
+				}
+			]
+		},
+		"churchFrontQuickSelect": {
+			"id": "churchFrontQuickSelect",
+			"groups": [
+				{
+					"id": "videoRoutingSources",
+					"tag": "churchFront",
+					"selection": "$(expression:videoRouting).churchFront.source.id",
+					"closeModalOnSelect": true,
+					"row": 1,
+					"col": 4
+				}
+			]
+		},
+		"churchRearQuickSelect": {
+			"id": "churchRearQuickSelect",
+			"groups": [
+				{
+					"id": "videoRoutingSources",
+					"tag": "churchRear",
+					"selection": "$(expression:videoRouting).churchRear.source.id",
+					"closeModalOnSelect": true,
+					"row": 1,
+					"col": 4
+				}
+			]
+		},
+		"nurseryQuickSelect": {
+			"id": "nurseryQuickSelect",
+			"groups": [
+				{
+					"id": "videoRoutingSources",
+					"tag": "nursery",
+					"selection": "$(expression:videoRouting).nursery.source.id",
 					"closeModalOnSelect": true,
 					"row": 1,
 					"col": 4
