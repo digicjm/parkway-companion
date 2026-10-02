@@ -123,6 +123,65 @@
 				"var": "startStream"
 			}
 		},
+		"webExCallToggle": {
+			"id": "webExCallToggle",
+			"label": "Start WebEx",
+			"icon": "phone-disconnected",
+			"onPress": {
+				"var": "startStopWebEx"
+			}
+		},
+		"recordToggle": {
+			"id": "recordToggle",
+			"label": "Start Recording",
+			"icon": "usb-memory-stick",
+			"onPress": {
+				"var": "startStopRecording"
+			}
+		},
+		"programSourceSelect": {
+			"id": "programSourceSelect",
+			"label": "Program:",
+			"icon": "tv-show",
+			"onPress": {
+				"var": "showModal",
+				"value": "programSourceQuickSelect"
+			}
+		},
+		"pip": {
+			"id": "pip",
+			"label": "PIP:",
+			"icon": "channel-mosaic",
+			"onPress": {
+				"var": "showModal",
+				"value": "pipQuickSelect"
+			}
+		},
+		"hideLogo": {
+			"id": "hideLogo",
+			"label": "Hide Logo",
+			"icon": "no-image",
+			"onPress": {
+				"var": "toggleHideLogo"
+			}
+		},
+		"showMessage": {
+			"id": "showMessage",
+			"label": "Show Message",
+			"icon": "speech-bubble-with-dots",
+			"onPress": {
+				"var": "showModal",
+				"value": "messageSelect"
+			}
+		},
+		"muteVideo": {
+			"id": "muteVideo",
+			"label": "Mute Video",
+			"icon": "no-video",
+			"onPress": {
+				"var": "toggleMuteVideo"
+			}
+		},
 		"cameraUp": {
 			"id": "cameraUp",
 			"label": "UP",
