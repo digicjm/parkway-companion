@@ -301,7 +301,7 @@
 		"videoRoutingChurchFront": {
 			"id": "videoRoutingChurchFront",
 			"label": "Front TVs: ${$(expression:videoRouting).churchFront.source.label}",
-			"icon": "imac-settings",
+			"icon": "screensharing",
 			"onTap": {
 				"var": "showModal",
 				"value": "churchFrontQuickSelect"
@@ -314,7 +314,7 @@
 		"videoRoutingChurchRear": {
 			"id": "videoRoutingChurchRear",
 			"label": "Rear TV: ${$(expression:videoRouting).churchRear.source.label}",
-			"icon": "imac-settings",
+			"icon": "under-computer",
 			"onTap": {
 				"var": "showModal",
 				"value": "churchRearQuickSelect"
@@ -327,7 +327,7 @@
 		"videoRoutingNursery": {
 			"id": "videoRoutingNursery",
 			"label": "Nursery TV: ${$(expression:videoRouting).nursery.source.label}",
-			"icon": "imac-settings",
+			"icon": "teddy-bear",
 			"onTap": {
 				"var": "showModal",
 				"value": "nurseryQuickSelect"
