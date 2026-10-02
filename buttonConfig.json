@@ -251,7 +251,7 @@
 		},
 		"reinforcementMute": {
 			"id": "reinforcementMute",
-			"label": "Mute LoudSpkr",
+			"label": "Stop Voice Amplification",
 			"icon": "voice-recognition-scan",
 			"selected": "$(custom:muteReinforcement).value",
 			"highlight": "red",
