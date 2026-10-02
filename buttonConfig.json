@@ -252,7 +252,7 @@
 		"reinforcementMute": {
 			"id": "reinforcementMute",
 			"label": "Mute LoudSpkr",
-			"icon": "commercial",
+			"icon": "voice-recognition-scan",
 			"selected": "$(custom:muteReinforcement).value",
 			"highlight": "red",
 			"onPress": {
@@ -327,7 +327,7 @@
 		"videoRoutingNursery": {
 			"id": "videoRoutingNursery",
 			"label": "Nursery TV: ${$(expression:videoRouting).nursery.source.label}",
-			"icon": "teddy-bear",
+			"icon": "mothers-health",
 			"onTap": {
 				"var": "showModal",
 				"value": "nurseryQuickSelect"
