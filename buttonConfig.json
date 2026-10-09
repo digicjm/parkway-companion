@@ -456,9 +456,9 @@
 			"icon": "workstation",
 			"select": "pc",
 			"onPress": {
-				"var": "selectProgramSource",
+				"var": "selectStreamSource",
 				"value": {
-					"display": "$(local:groupTag)",
+					"output": "$(local:groupTag)",
 					"source": "pc"
 				}
 			}
@@ -469,9 +469,9 @@
 			"icon": "video-call",
 			"select": "cam1",
 			"onPress": {
-				"var": "selectProgramSource",
+				"var": "selectStreamSource",
 				"value": {
-					"display": "$(local:groupTag)",
+					"output": "$(local:groupTag)",
 					"source": "cam1"
 				}
 			}
@@ -482,9 +482,9 @@
 			"icon": "video-call",
 			"select": "cam2",
 			"onPress": {
-				"var": "selectProgramSource",
+				"var": "selectStreamSource",
 				"value": {
-					"display": "$(local:groupTag)",
+					"output": "$(local:groupTag)",
 					"source": "cam2"
 				}
 			}
@@ -495,9 +495,9 @@
 			"icon": "network-cable",
 			"select": "aux",
 			"onPress": {
-				"var": "selectProgramSource",
+				"var": "selectStreamSource",
 				"value": {
-					"display": "$(local:groupTag)",
+					"output": "$(local:groupTag)",
 					"source": "aux"
 				}
 			}
