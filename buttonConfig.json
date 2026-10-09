@@ -757,8 +757,8 @@
 					"tag": "program",
 					"selection": "$(expression:streamModel).program.source.id",
 					"closeModalOnSelect": true,
-					"row": 2,
-					"col": 3
+					"row": 1,
+					"col": 4
 				}
 			]
 		},
