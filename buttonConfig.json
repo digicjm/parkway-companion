@@ -143,6 +143,7 @@
 			"id": "programSourceSelect",
 			"label": "Program: ${$(expression:streamVideo).program.source.label}",
 			"icon": "tv-show",
+			"undimOnPages": ["programSourceQuickSelect"],
 			"onPress": {
 				"var": "showModal",
 				"value": "programSourceQuickSelect"
@@ -152,6 +153,7 @@
 			"id": "pip",
 			"label": "PIP: ${$(expression:streamVideo).pip.source.label}",
 			"icon": "channel-mosaic",
+			"undimOnPages": ["pipQuickSelect"],
 			"onPress": {
 				"var": "showModal",
 				"value": "pipQuickSelect"
