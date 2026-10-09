@@ -161,6 +161,7 @@
 			"id": "hideLogo",
 			"label": "Hide Logo",
 			"icon": "no-image",
+			"highlight": "red",
 			"onPress": {
 				"var": "toggleHideLogo"
 			}
@@ -178,6 +179,7 @@
 			"id": "muteVideo",
 			"label": "Mute Video",
 			"icon": "no-video",
+			"highlight": "red",
 			"onPress": {
 				"var": "toggleMuteVideo"
 			}
@@ -311,7 +313,7 @@
 		"reinforcementMute": {
 			"id": "reinforcementMute",
 			"label": "Stop Voice Amplification",
-			"icon": "voice-recognition-scan",
+			"icon": "not-hearing",
 			"selected": "$(custom:muteReinforcement).value",
 			"highlight": "red",
 			"onPress": {
@@ -447,6 +449,58 @@
 					"source": "message"
 				}
 			}
+		},
+		"streamSourceSelectPCSlides": {
+			"id": "streamSourceSelectPCSlides",
+			"label": "PC/Slides",
+			"icon": "workstation",
+			"select": "pc",
+			"onPress": {
+				"var": "selectProgramSource",
+				"value": {
+					"display": "$(local:groupTag)",
+					"source": "pc"
+				}
+			}
+		},
+		"streamSourceSelectCam1": {
+			"id": "streamSourceSelectCam1",
+			"label": "Rear Cam",
+			"icon": "video-call",
+			"select": "cam1",
+			"onPress": {
+				"var": "selectProgramSource",
+				"value": {
+					"display": "$(local:groupTag)",
+					"source": "cam1"
+				}
+			}
+		},
+		"streamSourceSelectCam2": {
+			"id": "streamSourceSelectCam2",
+			"label": "Side Cam",
+			"icon": "video-call",
+			"select": "cam2",
+			"onPress": {
+				"var": "selectProgramSource",
+				"value": {
+					"display": "$(local:groupTag)",
+					"source": "cam2"
+				}
+			}
+		},
+		"streamSourceSelectAux": {
+			"id": "streamSourceSelectAux",
+			"label": "Aux / Laptop",
+			"icon": "network-cable",
+			"select": "aux",
+			"onPress": {
+				"var": "selectProgramSource",
+				"value": {
+					"display": "$(local:groupTag)",
+					"source": "aux"
+				}
+			}
 		}
 	},
 	"buttonGroups": {
@@ -505,9 +559,21 @@
 				],
 				[
 					"muteVideo",
-					"showMessage",
 					"hideLogo",
+					"showMessage",
 					"pip"
+				]
+			]
+		},
+		"streamSources": {
+			"id": "streamSources",
+			"background": "blue",
+			"buttons": [
+				[
+					"streamSourceSelectCam1",
+					"streamSourceSelectCam2",
+					"streamSourceSelectPCSlides",
+					"streamSourceSelectAux"
 				]
 			]
 		},
@@ -679,6 +745,32 @@
 					"selection": "$(expression:videoRouting).nursery.source.id",
 					"closeModalOnSelect": true,
 					"row": 1,
+					"col": 4
+				}
+			]
+		},
+		"programSourceQuickSelect": {
+			"id": "programSourceQuickSelect",
+			"groups": [
+				{
+					"id": "streamSources",
+					"tag": "program",
+					"selection": "$(expression:streamModel).program.source.id",
+					"closeModalOnSelect": true,
+					"row": 2,
+					"col": 3
+				}
+			]
+		},
+		"pipQuickSelect": {
+			"id": "pipQuickSelect",
+			"groups": [
+				{
+					"id": "streamSources",
+					"tag": "pip",
+					"selection": "$(expression:streamModel).pip.source.id",
+					"closeModalOnSelect": true,
+					"row": 2,
 					"col": 4
 				}
 			]
