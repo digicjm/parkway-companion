@@ -141,7 +141,7 @@
 		},
 		"programSourceSelect": {
 			"id": "programSourceSelect",
-			"label": "Program:",
+			"label": "Program: ${$(expression:streamVideo).program.source.label}",
 			"icon": "tv-show",
 			"onPress": {
 				"var": "showModal",
@@ -150,7 +150,7 @@
 		},
 		"pip": {
 			"id": "pip",
-			"label": "PIP:",
+			"label": "PIP: ${$(expression:streamVideo).pip.source.label}",
 			"icon": "channel-mosaic",
 			"onPress": {
 				"var": "showModal",

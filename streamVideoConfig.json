@@ -1,0 +1,38 @@
+{
+    "sources": {
+        "cam1": {
+            "id": "cam1",
+            "label": "Rear Cam",
+            "type": "hdmi",
+            "inputNum": 1
+        },
+        "cam2": {
+            "id": "cam2",
+            "label": "Side Cam",
+            "type": "hdmi",
+            "inputNum": 2
+        },
+        "pc": {
+            "id": "pc",
+            "label": "Slides",
+            "type": "hdmi",
+            "inputNum": 3
+        },
+        "aux": {
+            "id": "aux",
+            "label": "Aux",
+            "type": "hdmi",
+            "inputNum": 4
+        }
+    },
+    "outputs": {
+        "program": {
+            "id": "program",
+            "label": "Program"
+        },
+        "pip": {
+            "id": "pip",
+            "label": "PIP"
+        }
+    }
+}
